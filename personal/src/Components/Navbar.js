@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
+import Logo from '../Assets/images/img-11.png';
 import './Navbar.css';
 
 function Navbar() {
@@ -30,8 +31,9 @@ function Navbar() {
         <div className='navbar-container'>
             {/* Main Header */}
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            Rahul Relekar
-            <i className='fas fa-rupee-sign' />
+            {/* Rahul Relekar
+            <i className='fas fa-rupee-sign' /> */}
+            <img src={Logo} alt="random" width="75rem" height="60rem"></img>
           </Link>
 
           {/* Hamburger */}
