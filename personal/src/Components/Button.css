@@ -17,7 +17,7 @@
   }
   
   .btn--outline {
-    background-color: linear-gradient(0.60turn, #3f87a6, #0bc9c9, #f69d3c);;
+    background-color: linear-gradient(0.60turn, #3f87a6, #0bc9c9, #f69d3c);
     color: #000;
     padding: 8px 20px;
     border: 1px solid var(--primary);

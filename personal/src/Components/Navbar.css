@@ -1,5 +1,6 @@
 .navbar {
-  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  background: rgb(0, 0, 0);
+  /* opacity:0.2; */
   height: 80px;
   display: flex;
   justify-content: center;
@@ -62,7 +63,7 @@
 .nav-links:hover {
   /* border-bottom: 4px solid #000;
   border-top: 4px solid #000 ; */
-  transition: all 0.5s ease-out;
+  transition: all 0.3s ease-out;
   color: #000;
   background: linear-gradient(0.60turn, #3f87a6, #0bc9c9, #f69d3c);
   
