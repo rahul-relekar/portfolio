@@ -39,6 +39,7 @@
     transition: all 0.3s ease-out;
     /* background: #fff; */
     background: linear-gradient(0.60turn, #3f87a6, #0bc9c9, #f69d3c);
+    border:transparent;
     color: #242424;
     transition: 250ms;
   }

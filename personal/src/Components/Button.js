@@ -25,6 +25,10 @@ export const Button = ({
         onClick={onClick}
         type={type}
       >
+        <div class="top-bar"></div>
+        <div class="bot-bar"></div>
+        <div class="left-bar"></div>
+        <div class="right-bar"></div>
         {children}
       </button>
     </Link>
