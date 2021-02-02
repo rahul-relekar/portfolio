@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { Button } from './Button';
-import { Link } from 'react-router-dom';
-import Logo from '../Assets/images/img-11.png';
-import './Navbar.css';
+import React, { useState, useEffect } from "react";
+import { Button } from "./Button";
+import { Link } from "react-router-dom";
+import Logo from "../Assets/images/img-11.png";
+import "./Navbar.css";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -23,44 +23,42 @@ function Navbar() {
     showButton();
   }, []);
 
-  window.addEventListener('resize', showButton);
+  window.addEventListener("resize", showButton);
 
   return (
     <>
-      <nav className='navbar'>
-        <div className='navbar-container'>
-            {/* Main Header */}
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            {/* Rahul Relekar
-            <i className='fas fa-rupee-sign' /> */}
+      <nav className="navbar" >
+        <div className="navbar-container" >
+          {/* Main Header */}
+          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>            
             <img src={Logo} alt="random" width="75rem" height="60rem"></img>
           </Link>
 
           {/* Hamburger */}
-          <div className='menu-icon' onClick={handleClick}>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+          <div className="menu-icon" onClick={handleClick}>
+            <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
 
           {/* List of Menu items */}
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li className="nav-item">
+              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                 Home
               </Link>
             </li>
-            <li className='nav-item'>
+            <li className="nav-item">
               <Link
-                to='/personal'
-                className='nav-links'
+                to="/personal"
+                className="nav-links"
                 onClick={closeMobileMenu}
               >
                 Personal
               </Link>
             </li>
-            <li className='nav-item'>
+            <li className="nav-item">
               <Link
-                to='/professional'
-                className='nav-links'
+                to="/professional"
+                className="nav-links"
                 onClick={closeMobileMenu}
               >
                 Professional
@@ -69,15 +67,15 @@ function Navbar() {
 
             <li>
               <Link
-                to='/contact-me'
-                className='nav-links-mobile'
+                to="/contact-me"
+                className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
                 Contact Me
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>Contact Me</Button>}
+          {button && <Button buttonStyle="btn--outline">Contact Me</Button>}
         </div>
       </nav>
     </>
